@@ -1,0 +1,18 @@
+<!-- Partnerships Section -->
+<section id="partnerships" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h3>Partnerships</h3>
+            <p>We proudly recommend these tools for managing your growth...</p>
+            <p><a href="https://gorgias.grsm.io/w2cgwxaqxu9764" target="_blank"><img src="/img/gorgias_partner_logo.png"></a>
+            </p>
+            <ul class="list-inline banner-social-buttons">
+                {% for network in site.social %}
+                <li>
+                    <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
